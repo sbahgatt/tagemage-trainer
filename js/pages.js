@@ -304,7 +304,7 @@
       return `<div class="narrow"><h1>Settings and backup</h1>
         <div class="panel">
           <label class="field"><span>Target score</span><input type="number" min="200" max="600" step="10" data-k="target" value="${s.target}"></label>
-          <label class="field"><span>Test date</span><input type="text" data-k="examDate" value="${esc(s.examDate)}" placeholder="YYYY-MM-DD" pattern="\\d{4}-\\d{2}-\\d{2}"></label>
+          <label class="field"><span>Test date</span><input type="text" data-k="examDate" value="${esc(s.examDate)}" placeholder="2027-02-04" pattern="\\d{4}-\\d{2}-\\d{2}"></label>
           <div class="field"><span>Theme</span><div class="seg">${['auto', 'light', 'dark'].map((t) => `<button data-act="theme" data-v="${t}" aria-pressed="${s.theme === t}">${t === 'auto' ? 'Match system' : t[0].toUpperCase() + t.slice(1)}</button>`).join('')}</div></div>
           <button class="btn primary" data-act="saveSettings">Save settings</button>
         </div>
@@ -343,6 +343,7 @@
         if (!/^\d{4}-\d{2}-\d{2}$/.test(d) || isNaN(new Date(d))) { T.toast('Write the date as YYYY-MM-DD, e.g. 2027-01-15.'); return; }
         store.S.settings.target = t;
         store.S.settings.examDate = d;
+        store.S.settings.examDateSet = true;
         save();
         T.toast('Settings saved.');
       },

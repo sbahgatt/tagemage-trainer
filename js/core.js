@@ -47,7 +47,7 @@
       mocks: [],    // {set, at, subs: {CT: {right, wrong, blank, score, ms}}, score, answers, times}
       errors: {},   // id -> {count, lastAt, resolved, lastChoice}
       plan: { done: {} }, // sessionId -> timestamp
-      settings: { target: 330, examDate: '2027-01-15', theme: 'auto' },
+      settings: { target: 330, examDate: '2027-02-04', theme: 'auto' },
       exam: null,
       genSeed: Math.floor(Math.random() * 1e9),
     };
@@ -59,7 +59,10 @@
         const s = JSON.parse(raw);
         if (s && s.version === 1) {
           const b = blank();
-          return Object.assign(b, s, { settings: Object.assign(b.settings, s.settings || {}), plan: Object.assign(b.plan, s.plan || {}) });
+          const out = Object.assign(b, s, { settings: Object.assign(b.settings, s.settings || {}), plan: Object.assign(b.plan, s.plan || {}) });
+          // The first build defaulted to 15 Jan; the booked date is 4 Feb. Only replace it if never set by hand.
+          if (out.settings.examDate === '2027-01-15' && !out.settings.examDateSet) out.settings.examDate = '2027-02-04';
+          return out;
         }
       }
     } catch (e) { /* storage blocked or corrupt: start fresh in memory */ }

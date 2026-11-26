@@ -108,7 +108,7 @@ window.TM_CONTENT = {
 <h2>Booking</h2>
 <ul>
 <li>Price: <strong>76 €</strong> (mainland France). Book at <a href="https://www.tagemage.fr/compte" target="_blank" rel="noopener">tagemage.fr/compte</a>: create an account (your name exactly as on your ID), choose a session, then pay by card. You must do the last two steps within 2 hours.</li>
-<li>Lyon dates: <strong>Fri 15 Jan 2027</strong> (book by 3 Jan), Thu 4 Feb 2027 (book by 24 Jan), Fri 19 Feb 2027 (book by 7 Feb), all at Espace Sarrazin, arrive at 13:15. Places are limited. Both December dates are full.</li>
+<li><strong>Your test: Thursday 4 February 2027, Espace Sarrazin (Lyon), arrive by 13:15.</strong> Download your convocation from your account from about 20 January.</li>
 <li>You can sit the test <strong>once per calendar quarter</strong> (up to 4 times a year). Schools see your <strong>best</strong> score.</li>
 <li>Free date change if you're more than 15 days before your session. If you miss the test, you pay again.</li>
 <li>Results arrive within 10 to 15 working days, in your online account only. You tick which schools can see your score there.</li>
@@ -140,7 +140,8 @@ window.TM_CONTENT = {
 <li>Rough school levels (unofficial, may predate 2025): NEOMA about 290, SKEMA about 300, emlyon about 335 (admitted candidates often 350+).</li>
 <li><strong>iaelyon</strong> asks French students for the <strong>SIM (Score IAE-Message)</strong>, not the TAGE MAGE.</li>
 <li><strong>emlyon</strong>: check with admissions whether a January 2027 score counts for the in-person AST 2027 (applications close 12 March 2027).</li>
-<li><strong>NEOMA (Ecricome Tremplin Bac+3)</strong>: session 1 registration closes 1 Feb 2027, session 2 on 19 Apr 2027.</li>
+<li><strong>NEOMA (Ecricome Tremplin Bac+3)</strong>: session 1 registration closes 1 Feb 2027, before your test. Ask Ecricome whether you can register for session 1 with a score still pending; otherwise use session 2 (closes 19 Apr 2027).</li>
+<li><strong>Timeline with 4 Feb:</strong> results by about 18–25 Feb. That's in time for emlyon (12 Mar) and the later SKEMA sessions. A retake is possible from April (new quarter), but results would arrive close to the 19 April NEOMA deadline.</li>
 </ul>
 `,
 };
